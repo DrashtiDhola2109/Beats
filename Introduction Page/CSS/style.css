@@ -1,0 +1,251 @@
+/*Body*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222831; 
+    color: #EEEEEE;
+    align-content: center;
+}
+
+/* navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #393E46;
+    position: -webkit-sticky;
+	  position: sticky;
+    top:0;
+  }
+.topnav a {
+    float: left;
+    display: block;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    height:27px;
+
+  }
+  
+.topnav a:hover {
+    background-color: #EEEEEE;
+    color: black;
+  }
+  
+.topnav a.signup {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    float: right;
+  }
+  
+.topnav .icon {
+  background-color: #00ADB5;
+    display: none;
+}
+
+/*Toggle*/
+/*
+input[type=checkbox]{
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 60px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+  left: 87%;
+  margin-top: -9px;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #EEEEEE;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #00ADB5;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 40px;
+}
+*/
+/*Media Querie  */
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    /*.toggle{
+      position: relative;
+      margin-right: 80px;
+      margin-top: -2px;
+      
+    }*/
+    .main{
+      padding: 10%;
+     
+    }
+    .main-2{
+      margin-top: 119%;
+      
+    }
+    
+  }
+
+/*################################## Main  Content ##################################*/
+
+/* Button */
+
+button {
+  padding: 0.8em 1.1em;
+  border: 1px solid #00ADB5;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #00ADB5;
+ }
+ 
+ button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #00ADB5 ;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ button:hover::before {
+  width: 105%;
+ }
+ 
+ button:hover {
+  color: #EEEEEE;
+ }
+
+ /*index Page Content */
+
+ div.main button{
+  margin-top: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+ }
+
+ div.main h1{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+ }
+
+ .main {
+  margin: 0;
+  padding: 23%;
+  background-color: #222831;
+
+}
+
+.main-2 {
+  padding: 70px;
+  background-color: #393E46;
+  text-align: center;
+
+}
+/*---------------------------------Footer---------------------------------------------*/
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 310px;
+  background-color: #282d32;
+  color:#f0f9ff;
+}
+
+ul a {
+  color:#f0f9ff;
+  text-decoration:none;
+  opacity:0.6;
+}
+para{
+  color: #f0f9ff;
+  opacity:0.6;
+}
+ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.icon {
+  display: flex;
+}
+
+i {
+  padding: 10px;
+  }
+/*-----------------------------------------------About Page-------------------------------------*/
+div.about h1{
+    text-align: center;
+    margin: 100px;
+}
+
+div.about p{
+  margin: 100px;
+
+}
+
+/*-----------------------------------------Card---------------------------------------*/
