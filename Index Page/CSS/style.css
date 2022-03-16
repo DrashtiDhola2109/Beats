@@ -28,6 +28,7 @@ a{
     width: 100%;
     height: 740px;
     margin-top: 2%;
+    border-radius: 8px;
 }
 
 h3{
@@ -42,4 +43,48 @@ h3{
         width: 100%;
         height: auto;
     }
+}
+
+/* Page Content */
+
+.heading{
+    margin: 30px 0 10px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* playlists card */
+
+.playlists-group{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.playlist-card{
+    flex: 0 0 auto;
+    max-width: 150px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.playlist-card-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.playlist-card-name{
+    width: 100%;
+    text-align: justify;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 5px;
 }
