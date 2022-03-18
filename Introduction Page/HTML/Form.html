@@ -3,11 +3,18 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>CodePen - Responsive Signup/Login form</title>
+   <title>Signup/Login</title>
    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-   <link rel="stylesheet" href="/CSS/form-style.css">
+   <link rel="stylesheet" href="../CSS/form-style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <script src="../JS/form-script.js"></script>
+
+
 
 </head>
 
@@ -23,13 +30,13 @@
                <a href="#" class="logo">Beats<span>.</span></a>
 
                <div class="heading">
-                  <h2><img src="/ASSETS/Logo_white.png"></h2>
+                  <h2><img src="../ASSETS/Logo_white.png"></h2>
                   <p>PLAY THE MOMENT</p>
                </div>
 
                <div class="success-msg">
                   <p>Great! You are one of our members now</p>
-                  <a href="#" class="profile">Your Profile</a>
+                  <a href="index.html" class="profile">Your Profile</a>
                </div>
             </div>
 
@@ -48,10 +55,11 @@
                      <div class="form-group">
                         <label for="loginPassword">Password</label>
                         <input type="password" name="loginPassword" id="loginPassword" required>
+                        <i class="far fa-eye" id="togglePassword" style="margin-left: 100%;margin-top: -50px;cursor: pointer;"></i>
                      </div>
 
                      <div class="CTA">
-                        <input type="submit" value="Login">
+                        <input type="button" value="Login" target="_self" id="loginbtn" >
                         <a href="#" class="switch">Create new account</a>
                      </div>
                   </form>
@@ -92,7 +100,7 @@
                      </div>
 
                      <div class="CTA">
-                        <input type="submit" value="Signup" id="submit">
+                        <input type="submit" value="Signup" id="submit" target="_self">
                         <a href="#" class="switch">Already have an account ?</a>
                      </div>
                   </form>
@@ -104,9 +112,7 @@
 
    </div>
    <!-- partial -->
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-   <script src="/JS/form-script.js"></script>
+   
 
 </body>
 

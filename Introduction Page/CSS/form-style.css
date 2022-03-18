@@ -165,9 +165,11 @@ section#formHolder {
 .form form label {
   font-size: 12px;
   font-weight: 400;
+  color: #bbbbbb;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   transform: translateY(40px);
+  color: #00ADB5;
   transition: all 0.4s;
   cursor: text;
   z-index: -1;

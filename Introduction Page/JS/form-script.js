@@ -82,8 +82,10 @@ $(document).ready(function () {
 
         if ($('a.switch').hasClass('active')) {
             $(this).parents('.form-peice').addClass('switched').siblings('.form-peice').removeClass('switched');
+            getElementById("email").innerHTML = '';
         } else {
             $(this).parents('.form-peice').removeClass('switched').siblings('.form-peice').addClass('switched');
+            getElementById("loginemail").innerHTML = '';
         }
     });
 
@@ -95,7 +97,7 @@ $(document).ready(function () {
         if (usernameError == true || emailError == true || passwordError == true || passConfirm == true) {
             $('.name, .email, .pass, .passConfirm').blur();
         } else {
-            $('.signup, .login').addClass('switched');
+            $('.signup', '.login').addClass('switched');
 
             setTimeout(function () { $('.signup, .login').hide(); }, 700);
             setTimeout(function () { $('.brand').addClass('active'); }, 300);
@@ -103,6 +105,7 @@ $(document).ready(function () {
             setTimeout(function () { $('.success-msg p').addClass('active'); }, 900);
             setTimeout(function () { $('.success-msg a').addClass('active'); }, 1050);
             setTimeout(function () { $('.form').hide(); }, 700);
+            // location.href = "index.html"; // page path which page to be opened on button click event
         }
     });
 
@@ -110,6 +113,26 @@ $(document).ready(function () {
     $('a.profile').on('click', function () {
         location.reload(true);
     });
+
+    document.getElementById("loginbtn").onclick = function () {
+        location.href = "index.html"; // page path which page to be opened on button click event
+    };
+
+    // document.getElementById("submit").onclick = function () {
+    //     location.href = "index.html"; // page path which page to be opened on button click event
+    // };
+
+    //password hidden/show functionality
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#loginPassword');
+   
+    togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
 
 
 });
