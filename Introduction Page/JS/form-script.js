@@ -115,7 +115,7 @@ $(document).ready(function () {
     });
 
     document.getElementById("loginbtn").onclick = function () {
-        location.href = "index.html"; // page path which page to be opened on button click event
+        location.href = "/Index Page/HTML/index.html"; // page path which page to be opened on button click event
     };
 
     // document.getElementById("submit").onclick = function () {
