@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&family=Roboto+Mono:wght@300;329&display=swap');
 *{
     color: #EEEEEE;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body{
     background-color: #222831;
