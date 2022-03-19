@@ -105,7 +105,6 @@ $(document).ready(function () {
             setTimeout(function () { $('.success-msg p').addClass('active'); }, 900);
             setTimeout(function () { $('.success-msg a').addClass('active'); }, 1050);
             setTimeout(function () { $('.form').hide(); }, 700);
-            // location.href = "index.html"; // page path which page to be opened on button click event
         }
     });
 
@@ -118,9 +117,6 @@ $(document).ready(function () {
         location.href = "/Index Page/HTML/index.html"; // page path which page to be opened on button click event
     };
 
-    // document.getElementById("submit").onclick = function () {
-    //     location.href = "index.html"; // page path which page to be opened on button click event
-    // };
 
     //password hidden/show functionality
     const togglePassword = document.querySelector('#togglePassword');
@@ -132,7 +128,59 @@ $(document).ready(function () {
     password.setAttribute('type', type);
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
-});
+    });
 
 
 });
+
+function homePage()
+{
+   // location.href = ""
+}
+
+function checkCookie()
+    {
+        let user = getCookie("email");
+        if (user != "") {
+          alert("Welcome again " + user + pass);
+        // location.href = ""
+        setTimeout(homePage, 3000)
+        
+        } 
+        else 
+        {
+           user = document.getElementById("email").value;
+           alert(user); 
+           if (user != "" && user != null) {
+             setCookie("email", user , 30);
+           }
+        }
+      }
+
+      function setCookie(cname,cvalue,exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        localStorage.setItem(cname, cvalue);
+        let fullname = document.getElementById("name").value
+        localStorage.setItem("Full name", fullname);
+        let phone = document.getElementById("phone").value
+        localStorage.setItem("Phone no.", phone);
+      }
+      
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
