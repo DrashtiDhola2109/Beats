@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
    <script src="../JS/form-script.js"></script>
    <script>
-    
+
    </script>
 
 
@@ -44,9 +44,11 @@
 
 
             <!-- Form Box -->
+
             <div class="col-sm-6  form">
 
                <!-- Login Form -->
+
                <div class="login form-peice switched">
                   <form class="login-form" action="#" method="post">
                      <div class="form-group">
@@ -56,17 +58,33 @@
 
                      <div class="form-group">
                         <label for="loginPassword">Password</label>
-                        <input type="password" name="loginPassword" id="loginPassword" required>
+                        <input type="password" name="loginPassword" id="loginPassword" required
+                           style="width:300px;display: inline-block;">
                         <i class="far fa-eye" id="togglePassword"
-                           style="margin-left: 100%;margin-top: -50px;cursor: pointer;"></i>
+                           style="margin-left: 100%;cursor: pointer;float:right;margin-top: -25px;"></i>
                      </div>
 
+
+                     <div class="grid">
+                        <label class="checkbox bounce">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 21 21">
+                                <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                            </svg>
+                            <p style="margin-left: 10px;margin-top: 3px;">Remember Me</p>
+                        </label>
+                    </div>
+
+<br>
+
                      <div class="CTA">
-                        <input type="button" value="Login" target="_self" id="loginbtn">
+                        <input type="button" value="Login" target="_self" id="loginbtn" class="loginbtn">
                         <a href="#" class="switch">Create new account</a>
                      </div>
                   </form>
-               </div><!-- End Login Form -->
+               </div>
+
+               <!-- End Login Form -->
 
 
                <!-- Signup Form -->

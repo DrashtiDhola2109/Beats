@@ -143,14 +143,16 @@ function checkCookie()
         let user = getCookie("email");
         if (user != "") {
           alert("Welcome again " + user + pass);
-        // location.href = ""
+          window.setTimeout(function(){
+            location.href = "../HTML/loading.html"; 
+        }, 5000);
         setTimeout(homePage, 3000)
         
         } 
         else 
         {
            user = document.getElementById("email").value;
-           alert(user); 
+           //alert(user); 
            if (user != "" && user != null) {
              setCookie("email", user , 30);
            }
