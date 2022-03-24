@@ -113,9 +113,11 @@ $(document).ready(function () {
         location.reload(true);
     });
 
+
     document.getElementById("loginbtn").onclick = function () {
-        location.href = "/Index Page/HTML/index.html"; // page path which page to be opened on button click event
+        window.location.href = '../HTML/loading.html';
     };
+    
 
 
     //password hidden/show functionality
@@ -133,20 +135,16 @@ $(document).ready(function () {
 
 });
 
-function homePage()
-{
-   // location.href = ""
-}
 
 function checkCookie()
     {
+        // alert("Welcome again " + user);
         let user = getCookie("email");
         if (user != "") {
-          alert("Welcome again " + user + pass);
-          window.setTimeout(function(){
-            location.href = "../HTML/loading.html"; 
-        }, 5000);
-        setTimeout(homePage, 3000)
+        //   alert("Welcome again " + user);
+          $('.signup').addClass('switched');
+          $('.login').removeClass('switched');
+        // setTimeout(homePage, 3000)
         
         } 
         else 

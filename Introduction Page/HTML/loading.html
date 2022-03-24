@@ -1,8 +1,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="../CSS/loading.css">
+   <script>
+    //  setTimeout(myURL, 5000);
+         function myURL(){
+            window.location.href = '/Index Page/HTML/index.html';
+         }
+   </script>
         </head>
-    <body>
+    <body onload="setTimeout(myURL, 3000)">
     <div class='sound-icon disabled'>
         <div class='sound-wave'>
           <i class='bar'></i>
@@ -27,7 +33,7 @@
           <i class='bar'></i>
         </div>
       </div>
-<a href="../HTML/loading.html"></a>
+<!-- <a href="../HTML/loading.html"></a> -->
       <div class="text">
 
       <p>Logging in</p>

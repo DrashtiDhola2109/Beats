@@ -145,6 +145,10 @@ section#formHolder {
   width: 130%;
   overflow: hidden;
 }
+
+label{
+  font-weight: 700px;
+}
 .form .form-peice.switched {
   transform: translateX(-100%);
   width: 100%;
