@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/payment.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JS/payment.js"></script>
+</head>
+
+<body onload="Am()">
+
+<form>
+
+    <h1 style="text-align:center">Payment</h1>
+  
+    <section>
+      <label for="cc-number">Card number</label>
+      <input id="cc-number" name="cc-number" autocomplete="cc-number" inputmode="numeric" pattern="[\d ]{10,30}" required>
+    </section>
+  
+    <section>
+      <label for="cc-name">Name on card</label>
+      <input id="cc-name" name="cc-name" autocomplete="cc-name" pattern="[\p{L} \-\.]+" required>
+    </section>
+  
+    <section id="cc-exp-csc">
+        <div>
+            <label for="amount">Amount</label>
+        <input id="amount" name="amount" disabled>
+        </div>
+      <div>
+        <label for="cc-exp">Expiry date</label>
+        <input id="cc-exp" name="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" required>
+      </div>
+      <div>
+        <label for="cc-csc">CVV</label>
+        <input id="cc-csc" name="cc-csc" autocomplete="cc-csc" inputmode="numeric" maxlength="3" required placeholder="last 3 digits">
+      </div>
+    </section>
+  
+    <button id="complete-payment">Complete payment</button>
+  
+  </form>
+
+</body>
+</html>
