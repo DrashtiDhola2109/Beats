@@ -15,11 +15,6 @@ $('#complete-payment').click(function (e) {
   }
 }); 
 
-
-
-
-
-
 });
 let amount = sessionStorage.getItem('Price');
 
