@@ -36,15 +36,7 @@ $(document).ready(function () {
             }
         }
         // Email
-        if ($(this).hasClass('email')) {
-            if ($(this).val().length == '') {
-                $(this).siblings('span.error').text('Please type your email address').fadeIn().parent('.form-group').addClass('hasError');
-                emailError = true;
-            } else {
-                $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
-                emailError = false;
-            }
-        }
+       
 
         // PassWord
         if ($(this).hasClass('pass')) {
@@ -148,7 +140,7 @@ function checkCookie()
         
         } 
         else 
-        {
+        {   
            user = document.getElementById("email").value;
            //alert(user); 
            if (user != "" && user != null) {
