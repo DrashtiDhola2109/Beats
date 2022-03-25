@@ -6,8 +6,6 @@ $(document).ready(function() {
     
     let planType = $(this).attr('id');
     sessionStorage.setItem('Plan',planType);
-    res = sessionStorage.getItem('Plan');
-    alert(res);
     if(sessionStorage.getItem('Plan') == "Base")
     {
         sessionStorage.removeItem('Price');

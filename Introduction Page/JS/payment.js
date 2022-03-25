@@ -11,7 +11,7 @@ $('#complete-payment').click(function (e) {
     completePaymentButton.value = 'Making payment...';
     completePaymentButton.disabled = 'true';
     // setTimeout(() => {alert('Made payment!');}, 500);
-    window.location.href = '../HTML/loading.html';
+    window.location.href = '../HTML/payment_loading.html';
   }
 }); 
 
@@ -24,6 +24,5 @@ $('#complete-payment').click(function (e) {
 let amount = sessionStorage.getItem('Price');
 
 function Am(){
-    alert('Amount: ' + amount);
     document.getElementById("amount").value = amount;
 }
